@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+*{padding: 0; left: 0; top: 0; margin: 0;}
+
+
+:root{
+  --cor-primary: #3e4095;
+  --cor-secundary: #00a4b2;
+  --cor-tertiary: #ffff;
+}
+
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}

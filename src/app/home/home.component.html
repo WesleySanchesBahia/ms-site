@@ -1,0 +1,169 @@
+<app-header></app-header>
+<div>
+  <div class="present">
+    <h1 id="textPresent">
+      Sem travamentos<br />
+      e muito mais rapida!
+    </h1>
+  </div>
+  <video #myVideo autoplay controls="false">
+    <source src="assets/videos/pexels-pixabay-855411-1920x1080-25fps.mp4" type="video/mp4" />
+  </video>
+</div>
+<section class="containerPlanos">
+  <h1>Nossos planos</h1>
+  <h3>Confira abaixo os planos residenciais mais assinados pelos nossos clientes</h3>
+  <div class="containerCards">
+
+    <div class="containerCard">
+      <div class="headerCard">
+        <h2>80 MEGAS</h2>
+      </div>
+      <div class="cardDescription">
+        <ul>
+          <li>Download: 80 Mega</li>
+          <li>Upload: 80 Mega</li>
+        </ul>
+        <h4>Instalação gratuita 100% Fibra Ótica</h4>
+      </div>
+      <div class="btn">
+        <button>Contrate agora</button>
+      </div>
+    </div>
+
+    <div class="containerCard">
+      <div class="headerCard">
+        <h2>100 MEGAS</h2>
+      </div>
+      <div class="cardDescription">
+        <ul>
+          <li>Download: 100 Mega</li>
+          <li>Upload: 100 Mega</li>
+        </ul>
+        <h4>Instalação gratuita 100% Fibra Ótica</h4>
+      </div>
+      <div class="btn">
+        <button>Contrate agora</button>
+      </div>
+    </div>
+
+    <div class="containerCard">
+      <div class="headerCard">
+        <h2>400 MEGAS</h2>
+      </div>
+      <div class="cardDescription">
+        <ul>
+          <li>Download: 400 Mega</li>
+          <li>Upload: 400 Mega</li>
+        </ul>
+        <h4>Instalação gratuita 100% Fibra Ótica</h4>
+      </div>
+      <div class="btn">
+        <button>Contrate agora</button>
+      </div>
+    </div>
+
+    <div class="containerCard">
+      <div class="headerCard">
+        <h2>500 MEGAS</h2>
+      </div>
+      <div class="cardDescription">
+        <ul>
+          <li>Download: 500 Mega</li>
+          <li>Upload: 500 Mega</li>
+        </ul>
+        <h4>Instalação gratuita 100% Fibra Ótica</h4>
+      </div>
+      <div class="btn">
+        <button>Contrate agora</button>
+      </div>
+    </div>
+
+    <div class="containerCard">
+      <div class="headerCard">
+        <h2>700 MEGAS</h2>
+      </div>
+      <div class="cardDescription">
+        <ul>
+          <li>Download: 700 Mega</li>
+          <li>Upload: 700 Mega</li>
+        </ul>
+        <h4>Instalação gratuita 100% Fibra Ótica</h4>
+      </div>
+      <div class="btn">
+        <button>Contrate agora</button>
+      </div>
+    </div>
+
+    <div class="containerCard">
+      <div class="headerCard">
+        <h2>800 MEGAS</h2>
+      </div>
+      <div class="cardDescription">
+        <ul>
+          <li>Download: 800 Mega</li>
+          <li>Upload: 800 Mega</li>
+        </ul>
+        <h4>Instalação gratuita 100% Fibra Ótica</h4>
+      </div>
+      <div class="btn">
+        <button>Contrate agora</button>
+      </div>
+    </div>
+    <div class="containerCard">
+      <div class="headerCard">
+        <h2>900 MEGAS</h2>
+      </div>
+      <div class="cardDescription">
+        <ul>
+          <li>Download: 900 Mega</li>
+          <li>Upload: 900 Mega</li>
+        </ul>
+        <h4>Instalação gratuita 100% Fibra Ótica</h4>
+      </div>
+      <div class="btn">
+        <button>Contrate agora</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="containerMap">
+  <div class="tituloMap">
+    <h1> Nossos pontos de cobertura</h1>
+    <h3>Visualize no mapa abaixo os nossos pontos de atendimento</h3>
+  </div>
+  <div class="map">
+    <div class="descripition">
+      <h1>Quais são as Vantagens?</h1>
+      <div class="contaierSlide">
+        <img width="250" src="assets/image/pexels-darlene-alderson-4389890.jpg" alt="">
+        <carousel [width]="450" [dots]="true" [transitionDuration]="200" [transitionTimingFunction]="'ease'"  [cellsToShow]="1" [loop]="true" [lightDOM]="true" [autoplay]="true" [autoplayInterval]="10000"	[arrowsOutside]="false" [arrows]="false">
+          <div class="carousel-cell">
+            <h2>A internet em um piscar de olhos
+            </h2>
+          <h4>Prepare-se para acessar a internet
+            sem interrupções e principalmente
+            sem perda de tempo.</h4>
+        </div>
+          <div class="carousel-cell">
+            <h2>Melhor custo e beneficio</h2>
+            <h4>Além dos nossos planos serem acessíveis
+              a instalação é <strong>gratuita</strong>.</h4>
+        </div>
+          <div class="carousel-cell">
+            <h2>Suporte técnico
+            </h2>
+            <h4>Qualidade e agilidade de atendimento com equipe treinada para oferecer a melhor solução para você.</h4>
+        </div>
+          <div class="carousel-cell">
+            <h2>Qualidade em primeiro lugar
+            </h2>
+            <h4>Com a MSFIBRA você tem uma taxa absurda de upload para enviar fotos, vídeos e não ter aquela tela de carregamento chata ao enviar um arquivo.
+              E dê adeus aos lags nos jogos online.</h4>
+        </div>
+        </carousel>
+      </div>
+    </div>
+    <app-mapa></app-mapa>
+  </div>
+</section>
