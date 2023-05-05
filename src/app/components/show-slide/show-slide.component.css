@@ -1,0 +1,40 @@
+.container{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.container > img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  clip-path: polygon(100.00% 50.00%,90.45% 79.39%,65.45% 97.55%,34.55% 97.55%,9.55% 79.39%,0.00% 50.00%,9.55% 20.61%,34.55% 2.45%,65.45% 2.45%,90.45% 20.61%);
+
+}
+
+.container.active {
+  animation-name: containerAnimation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes containerAnimation {
+  0%{
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#containerTxt{
+  display: flex;
+  flex-direction: column;
+}
+
+#containerTxt > h4 {
+  color: #777777;
+  text-align: justify;
+}

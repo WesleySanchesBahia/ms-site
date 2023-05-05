@@ -6,8 +6,9 @@ import { Component, AfterViewInit, OnInit, ViewChild, ElementRef } from '@angula
 
 })
 export class HomeComponent implements AfterViewInit {
-
   @ViewChild('myVideo') myVideo: ElementRef | undefined;
+
+  isload: boolean = false;
   ngOnInit(): void {
 
 
@@ -15,8 +16,8 @@ export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
 
-
     Promise.resolve().then(() => {
+      this.isload = true;
       setTimeout(() => {
         const videoElement = this.myVideo?.nativeElement;
         videoElement.controls = false
