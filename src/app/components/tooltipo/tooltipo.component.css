@@ -1,0 +1,13 @@
+.containerTooltipo{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.fixed-buttons {
+  display: flex;
+  justify-content: flex-end;
+}

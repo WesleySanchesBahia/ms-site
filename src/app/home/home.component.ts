@@ -17,15 +17,19 @@ export class HomeComponent implements AfterViewInit {
   ngAfterViewInit(): void {
 
     Promise.resolve().then(() => {
-      this.isload = true;
       setTimeout(() => {
         const videoElement = this.myVideo?.nativeElement;
-        videoElement.controls = false
+        videoElement.controls = false;
         videoElement.currentTime = 10
         videoElement.addEventListener('ended', () => {
           videoElement.play();
         });
-      }, 500);
+      }, 800);
     })
+
+
+    setTimeout(() => {
+      this.isload = true;
+    }, 500);
   }
 }

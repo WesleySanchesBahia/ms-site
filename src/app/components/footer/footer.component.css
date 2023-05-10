@@ -1,0 +1,58 @@
+.container{
+  background: var(--cor-primary);
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.container > div > img {
+
+}
+
+
+.submessage{
+  font-size: 10px;
+  max-width: 25rem;
+  margin-left: 2rem;
+  color: #fff;
+  text-align: justify;
+  font-weight: 700;
+}
+
+
+.central, .central-social{
+  color: #fff;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.central > div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.central > div  > a {
+  font-size: 18px;
+  font-weight: 700;
+
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+}
+
+
+
+
+.central-social > div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 0.5rem;
+  align-items: baseline;
+}

@@ -98,7 +98,7 @@ video {
   width: 100%;
 }
 
-.btn > button{
+.btn > a{
   margin-top: 2rem;
   width: 13rem;
   height: 3rem;
@@ -111,11 +111,15 @@ video {
   background: rgb(62,64,149);
   background: linear-gradient(90deg, rgba(62,64,149,1) 19%, rgba(0,164,178,1) 100%);
   transition: ease-in 8ms;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 
-.btn > button:hover{
+.btn > a:hover{
   cursor: pointer;
   background: rgb(62,64,149);
   background: linear-gradient(90deg, rgba(0,164,178,1)  19%,  rgba(62,64,149,1) 100%);

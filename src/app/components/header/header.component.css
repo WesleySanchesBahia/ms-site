@@ -27,7 +27,7 @@ ul{
 }
 
 
-ul > li:nth-child(4){
+ul > li:nth-child(4) > a{
   background: #fff;
   max-width: 15rem;
   color: var(--cor-primary);
@@ -36,12 +36,13 @@ ul > li:nth-child(4){
   align-items: center;
   justify-content: space-around;
   border-radius: 20px;
+  text-decoration: none;
 }
 
-li:nth-child(4) > svg{
+li:nth-child(4) > a > svg{
   margin-left: 0.5rem;
 }
-li:nth-child(4) > span{
+li:nth-child(4) > a >  span{
   margin-left: 0.5rem;
 }
 

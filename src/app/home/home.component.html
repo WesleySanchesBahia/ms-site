@@ -2,16 +2,16 @@
   <app-header></app-header>
   <div>
     <div class="present">
-      <h1 id="textPresent">
+      <h1 id="textPresent" >
         Sem travamentos<br />
         e muito mais rapida!
       </h1>
     </div>
-    <video #myVideo autoplay controls="false">
+    <video #myVideo autoplay controls>
       <source src="assets/videos/pexels-pixabay-855411-1920x1080-25fps.mp4" type="video/mp4" />
     </video>
   </div>
-  <section class="containerPlanos">
+  <section class="containerPlanos" id="planos">
     <h1>Nossos planos</h1>
     <h3>Confira abaixo os planos residenciais mais assinados pelos nossos clientes</h3>
     <div class="containerCards">
@@ -28,7 +28,7 @@
           <h4>Instalação gratuita 100% Fibra Ótica</h4>
         </div>
         <div class="btn">
-          <button>Contrate agora</button>
+          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%2080%20mega" target="_blank" >Contrate agora</a>
         </div>
       </div>
 
@@ -44,7 +44,7 @@
           <h4>Instalação gratuita 100% Fibra Ótica</h4>
         </div>
         <div class="btn">
-          <button>Contrate agora</button>
+          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%20100%20mega" target="_blank" >Contrate agora</a>
         </div>
       </div>
 
@@ -60,7 +60,7 @@
           <h4>Instalação gratuita 100% Fibra Ótica</h4>
         </div>
         <div class="btn">
-          <button>Contrate agora</button>
+          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%20400%20mega" target="_blank" >Contrate agora</a>
         </div>
       </div>
 
@@ -76,7 +76,7 @@
           <h4>Instalação gratuita 100% Fibra Ótica</h4>
         </div>
         <div class="btn">
-          <button>Contrate agora</button>
+          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%20500%20mega" target="_blank" >Contrate agora</a>
         </div>
       </div>
 
@@ -92,7 +92,7 @@
           <h4>Instalação gratuita 100% Fibra Ótica</h4>
         </div>
         <div class="btn">
-          <button>Contrate agora</button>
+          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%20700%20mega" target="_blank" >Contrate agora</a>
         </div>
       </div>
 
@@ -108,7 +108,7 @@
           <h4>Instalação gratuita 100% Fibra Ótica</h4>
         </div>
         <div class="btn">
-          <button>Contrate agora</button>
+          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%20800%20mega" target="_blank" >Contrate agora</a>
         </div>
       </div>
       <div class="containerCard">
@@ -123,12 +123,12 @@
           <h4>Instalação gratuita 100% Fibra Ótica</h4>
         </div>
         <div class="btn">
-          <button>Contrate agora</button>
+          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%20900%20mega" target="_blank" >Contrate agora</a>
         </div>
       </div>
     </div>
   </section>
-  <section class="containerMap">
+  <section class="containerMap" id="cobertura">
     <div class="tituloMap">
       <h1> Nossos pontos de cobertura</h1>
       <h3>Visualize no mapa abaixo os nossos pontos de atendimento</h3>
@@ -143,4 +143,5 @@
       <app-mapa></app-mapa>
     </div>
   </section>
+  <app-footer id="contatos"></app-footer>
 </div>

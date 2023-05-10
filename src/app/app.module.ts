@@ -9,6 +9,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { MapaComponent } from './components/mapa/mapa.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { ShowSlideComponent } from './components/show-slide/show-slide.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { TooltipoComponent } from './components/tooltipo/tooltipo.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ShowSlideComponent } from './components/show-slide/show-slide.component
     HomeComponent,
     HeaderComponent,
     MapaComponent,
-    ShowSlideComponent
+    ShowSlideComponent,
+    FooterComponent,
+    TooltipoComponent
   ],
   imports: [
     BrowserModule,
