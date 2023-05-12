@@ -1,4 +1,15 @@
 #map{
   border:  8px solid var(--cor-primary);
   border-radius: 12px;
+  width: 550px;
+  height: 300px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  #map{
+    width: 440px;
+  }
 }

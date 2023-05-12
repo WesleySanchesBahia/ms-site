@@ -1,13 +1,24 @@
-.containerTooltipo{
+div{
+  top: 90vh;
+  left: 65vw; /* Ajuste a posição horizontal conforme necessário */
   position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 10px;
-  z-index: 9999;
+}
+div > span > a{
+  background: var(--cor-secundary);
+  max-width: 10rem;
+  min-width: 10rem;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  text-decoration: none;
 }
 
-.fixed-buttons {
-  display: flex;
-  justify-content: flex-end;
+span > a > svg{
+  margin-left: 0.5rem;
+}
+span > a >  span{
+  margin-left: 0.5rem;
 }

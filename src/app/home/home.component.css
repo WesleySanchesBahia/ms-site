@@ -1,17 +1,11 @@
 
-div{
+.containerPrimary{
   overflow: hidden;
+  position: relative;
 }
-video {
-  width: 99vw;
-
-}
-
 .present{
   position: absolute;
   z-index: 2;
-  margin-top: 15rem;
-  font-size: 50px;
   font-family: 'Roboto' sans-serif;
   color: #fff;
   margin-left: 0.5rem;
@@ -30,8 +24,6 @@ video {
 }
 .containerPlanos  > h1 {
   text-align: center;
-  margin-top: 2rem;
-  font-size: 48px;
   color: var(--cor-primary)
 }
 
@@ -44,7 +36,6 @@ video {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 99%;
   justify-content: center;
   padding: 2rem;
 }
@@ -189,4 +180,135 @@ video {
   z-index: 10;
   text-align: center;
   margin-top: 115px;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 0;
+  padding: 10px 20px;
+  /* Adicione outros estilos de botão, conforme necessário */
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 767px) {
+  /* Estilos para telas menores que 768 pixels de largura */
+
+  /* Exemplos de regras de estilo: */
+  video {
+    width: 100%;
+
+  }
+
+  .present{
+    margin-top: 6rem;
+    font-size: 20px;
+  }
+
+  .containerPlanos  > h1, .tituloMap > h1 {
+    margin-top: 1rem;
+    font-size: 25px;
+  }
+
+  .containerPlanos > h3  .tituloMap > h3{
+    font-size: 16px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .containerCards{
+    display: -webkit-box;
+    overflow-x: scroll;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+
+  .map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .containerMap > .tituloMap{
+    padding: 1rem;
+  }
+
+}
+
+/* Estilos para tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para telas com largura entre 768px e 1023px */
+
+  /* Exemplos de regras de estilo: */
+  video {
+    width: 99vw;
+
+  }
+
+  .present{
+    margin-top: 10rem;
+    font-size: 30px;
+  }
+
+  .containerPlanos  > h1, .tituloMap > h1{
+    margin-top: 1rem;
+    font-size: 30px;
+  }
+
+  .containerPlanos > h3, .tituloMap > h3 {
+    font-size: 22px;
+  }
+
+  .map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containerMap > .tituloMap{
+    padding: 1rem;
+  }
+
+  .floating-button{
+    top: 90vh;
+    left: 37rem; /* Ajuste a posição horizontal conforme necessário */
+  }
+}
+
+/* Estilos para desktops */
+@media screen and (min-width: 1024px) {
+  /* Estilos para telas maiores que 1023px de largura */
+
+  /* Exemplos de regras de estilo: */
+  video {
+    width: 99vw;
+
+  }
+
+  .present{
+    margin-top: 16rem;
+    font-size: 50px;
+  }
+
+  .containerPlanos  > h1, .tituloMap > h1 {
+    margin-top: 2rem;
+    font-size: 50px;
+  }
+
+  .containerCards{
+    max-width: 99%;
+  }
+
+  .containerMap > .tituloMap{
+    padding: 2rem;
+  }
+
+
+  .floating-button{
+    top: 90vh;
+    left: 100rem; /* Ajuste a posição horizontal conforme necessário */
+  }
+
 }

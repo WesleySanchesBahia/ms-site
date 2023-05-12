@@ -76,7 +76,7 @@ export class HeaderComponent implements OnInit {
     } else if (width < 768) {
       return false;
     } else if (width < 992) {
-      return false;
+      return true;
     } else if (width < 1200) {
       return true;
     } else {

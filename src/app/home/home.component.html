@@ -1,4 +1,4 @@
-<div *ngIf="isload">
+<div class="containerPrimary">
   <app-header></app-header>
   <div>
     <div class="present">
@@ -134,14 +134,15 @@
       <h3>Visualize no mapa abaixo os nossos pontos de atendimento</h3>
     </div>
     <div class="map">
-      <div class="descripition">
+      <div class="descripition" *ngIf="screenSize$ | async">
         <h1>Quais são as Vantagens?</h1>
         <div class="contaierSlide">
-          <app-show-slide></app-show-slide>
+          <app-show-slide ></app-show-slide>
         </div>
       </div>
       <app-mapa></app-mapa>
     </div>
   </section>
   <app-footer id="contatos"></app-footer>
+  <app-tooltipo *ngIf="active$ | async"></app-tooltipo>
 </div>
