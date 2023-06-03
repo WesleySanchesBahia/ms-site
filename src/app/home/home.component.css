@@ -1,7 +1,42 @@
+.isload {
+  width: 100%;
+  height: 100vh;
+  background: var(--cor-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+#logo{
+  animation-name: resizeAnimation;
+  animation-duration: 0.5s; /* Duração da animação */
+  animation-iteration-count: infinite; /* Repetição infinita */
+  animation-direction: alternate; /* Alterna entre o crescimento e a diminuição */
+}
+@keyframes resizeAnimation {
+  0% {
+    transform: scale(1); /* Tamanho inicial */
+  }
+  50% {
+    transform: scale(1.5); /* Tamanho máximo */
+  }
+  100% {
+    transform: scale(1); /* Tamanho final */
+  }
+}
+
 
 .containerPrimary{
   overflow: hidden;
   position: relative;
+}
+
+
+.isLoad {
+  visibility: hidden;
 }
 .present{
   position: absolute;
@@ -194,14 +229,14 @@
   /* Estilos para telas menores que 768 pixels de largura */
 
   /* Exemplos de regras de estilo: */
-  video {
+  #apresentacao {
     width: 100%;
 
   }
 
   .present{
     margin-top: 6rem;
-    font-size: 20px;
+    font-size: 12px;
   }
 
   .containerPlanos  > h1, .tituloMap > h1 {
@@ -235,6 +270,11 @@
     padding: 1rem;
   }
 
+  .floating-button{
+    top: 90vh;
+    left: 10rem; /* Ajuste a posição horizontal conforme necessário */
+  }
+
 }
 
 /* Estilos para tablets */
@@ -242,9 +282,8 @@
   /* Estilos para telas com largura entre 768px e 1023px */
 
   /* Exemplos de regras de estilo: */
-  video {
+  #apresentacao {
     width: 99vw;
-
   }
 
   .present{
@@ -282,7 +321,7 @@
   /* Estilos para telas maiores que 1023px de largura */
 
   /* Exemplos de regras de estilo: */
-  video {
+  #apresentacao {
     width: 99vw;
 
   }

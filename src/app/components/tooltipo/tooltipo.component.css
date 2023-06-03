@@ -1,8 +1,3 @@
-div{
-  top: 90vh;
-  left: 65vw; /* Ajuste a posição horizontal conforme necessário */
-  position: fixed;
-}
 div > span > a{
   background: var(--cor-secundary);
   max-width: 10rem;
@@ -21,4 +16,35 @@ span > a > svg{
 }
 span > a >  span{
   margin-left: 0.5rem;
+}
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 767px) {
+  /* Estilos para telas menores que 768 pixels de largura */
+
+  /* Exemplos de regras de estilo: */
+  div{
+    top: 90vh;
+    left: 55vw; /* Ajuste a posição horizontal conforme necessário */
+    position: fixed;
+  }
+}
+
+/* Estilos para tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para telas com largura entre 768px e 1023px */
+
+  /* Exemplos de regras de estilo: */
+  div{
+    top: 90vh;
+    left: 70vw; /* Ajuste a posição horizontal conforme necessário */
+    position: fixed;
+  }
+}
+
+/* Estilos para desktops */
+@media screen and (min-width: 1024px) {
+  /* Estilos para telas maiores que 1023px de largura */
+
+  /* Exemplos de regras de estilo: */
+
 }

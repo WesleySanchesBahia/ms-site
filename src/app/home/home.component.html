@@ -1,4 +1,7 @@
-<div class="containerPrimary">
+<div class="isload" *ngIf="!isload">
+    <img id="logo" width="120px" src="assets/image/logo-globo.png" alt="">
+</div>
+<div class="containerPrimary" [hidden]="!isload">
   <app-header></app-header>
   <div>
     <div class="present">
@@ -7,9 +10,7 @@
         e muito mais rapida!
       </h1>
     </div>
-    <video #myVideo autoplay controls>
-      <source src="assets/videos/pexels-pixabay-855411-1920x1080-25fps.mp4" type="video/mp4" />
-    </video>
+      <img id="apresentacao" src="assets/image/pexels-fauxels-3184357.jpg" alt="img_apresentacao">
   </div>
   <section class="containerPlanos" id="planos">
     <h1>Nossos planos</h1>
@@ -143,6 +144,6 @@
       <app-mapa></app-mapa>
     </div>
   </section>
-  <app-footer id="contatos"></app-footer>
+  <app-footer ></app-footer>
   <app-tooltipo *ngIf="active$ | async"></app-tooltipo>
 </div>

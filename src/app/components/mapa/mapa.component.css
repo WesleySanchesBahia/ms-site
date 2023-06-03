@@ -1,15 +1,154 @@
-#map{
-  border:  8px solid var(--cor-primary);
-  border-radius: 12px;
-  width: 550px;
-  height: 300px;
+div{
+  position: relative;
+}
+div > .bomSucesso, .jandaiaDoSul, .apucarana, .saoPedroDoIvai, .cambira,
+.saoJoaoDoIvai, .kalore, .novoItacolomi, .marumbi, .mandaguari, .rioBom, .california,
+.marilandia, .saoJoaoDoIvai, .borrazopolis, .mauaDaSerra,.lunardelli, .lidianopolis, .cruzmaltina, .faxinal, .ortigueira,.godoyMoreira, .jardinAlegre, .arapua, .ivaipora, .grandesRios, .manoelRibas,
+.aranhaDoIvai, .rioBrancoDoIVAI, .rosarioDoIvai, .candidoAbreu
+ {
+  position: absolute;
+  color: #fff;
+  font-size: 8px;
+  pointer-events: none;
+}
+div > .bomSucesso{
+  margin-left: 230px;
+  margin-top: 105px;
+}
+div > .saoPedroDoIvai{
+  margin-left: 225px;
+  margin-top: 150px;
+}
+div > .lunardelli{
+  margin-left: 250px;
+  margin-top: 215px;
+}
+div > .lidianopolis{
+  margin-left: 280px;
+  margin-top: 225px;
+}
+div > .cruzmaltina{
+  margin-left: 325px;
+  margin-top: 205px;
+}
+div > .faxinal{
+  margin-left: 385px;
+  margin-top: 190px;
+}
+div > .ortigueira{
+  margin-left: 465px;
+  margin-top: 235px;
+}
+div > .saoJoaoDoIvai{
+  margin-left: 235px;
+  margin-top: 190px;
+}
+div > .godoyMoreira{
+  margin-left: 220px;
+  margin-top: 243px;
+}
+div > .arapua{
+  margin-left: 245px;
+  margin-top: 300px;
+}
+div > .manoelRibas{
+  margin-left: 290px;
+  margin-top: 340px;
+}
+div > .aranhaDoIvai{
+  margin-left: 320px;
+  margin-top: 300px;
+}
+div > .rioBrancoDoIVAI{
+  margin-left: 365px;
+  margin-top: 290px;
+}
+div > .candidoAbreu{
+  margin-left: 380px;
+  margin-top: 385px;
+}
+div > .rosarioDoIvai{
+  margin-left: 410px;
+  margin-top: 275px;
+}
+div > .ivaipora{
+  margin-left: 295px;
+  margin-top: 270px;
+}
+div > .grandesRios{
+  margin-left: 340px;
+  margin-top: 245px;
+}
+div > .jardinAlegre{
+  margin-left: 260px;
+  margin-top: 243px;
+}
+div > .jandaiaDoSul{
+  margin-left: 278px;
+  margin-top: 80px;
+}
+div > .marumbi{
+  margin-left: 284px;
+  margin-top: 120px;
+}
+div > .cambira{
+  margin-left: 311px;
+  margin-top: 94px;
+}
+div > .apucarana{
+  margin-left: 340px;
+  margin-top: 70px;
+}
+div > .california{
+  margin-left: 375px;
+  margin-top: 95px;
+}
+div > .marilandia{
+  margin-left: 380px;
+  margin-top: 130px;
+}
+div > .kalore{
+  margin-left: 285px;
+  margin-top: 145px;
+}
+div > .novoItacolomi{
+  margin-left: 315px;
+  margin-top: 137px;;
+}
+div > .borrazopolis{
+  margin-left: 298px;
+  margin-top: 170px;;
+}
+div > .rioBom{
+  margin-left: 352px;
+  margin-top: 127px;;
+}
+div > .marilandia{
+  margin-left: 380px;
+  margin-top: 127px;;
+}
+div > .mauaDaSerra{
+  margin-left: 400px;
+  margin-top: 155px;;
+}
+.map-container{
+  background-color: (250, 229, 254);
+  background-color: #fae5fe;
+}
+.hover{
+  fill: #196cfc;
+}
+.border{
+  fill: #a8a8a8;
+}
+
+#pointer{
+
+  fill: #00a4b2;
+
 }
 
 
-
-@media only screen and (max-width: 600px) {
-
-  #map{
-    width: 440px;
-  }
+svg{
+  background-color: rgba(255, 255, 255, 0);
 }

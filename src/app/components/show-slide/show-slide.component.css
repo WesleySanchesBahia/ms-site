@@ -11,6 +11,11 @@
 
 }
 
+
+img{
+  width: 100%;
+}
+
 .container.active {
   animation-name: containerAnimation;
   animation-duration: 4s;
@@ -37,4 +42,35 @@
 #containerTxt > h4 {
   color: #777777;
   text-align: justify;
+}
+@media screen and (max-width: 767px) {
+  /* Estilos para telas menores que 768 pixels de largura */
+
+  /* Exemplos de regras de estilo: */
+  container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+/* Estilos para tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para telas com largura entre 768px e 1023px */
+
+  /* Exemplos de regras de estilo: */
+}
+
+/* Estilos para desktops */
+@media screen and (min-width: 1024px) {
+  /* Estilos para telas maiores que 1023px de largura */
+
+  /* Exemplos de regras de estilo: */
+  img{
+    width: 250px;
+  }
 }
