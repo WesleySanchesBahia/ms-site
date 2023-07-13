@@ -1,3 +1,4 @@
+import { planos } from './interface';
 import { Component, AfterViewInit, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map, share, startWith } from 'rxjs/operators';
@@ -12,11 +13,12 @@ export class HomeComponent implements AfterViewInit {
   private screenSizeSubject = new Subject<number>()
   screenSize$: Observable<boolean> | undefined
   active$: Observable<boolean> | undefined
+  isload: boolean = false;
+  listaPlanos = planos;
   @HostListener('window:resize', ['$event'])
     onResize(event: any) {
       this.screenSizeSubject.next(event.target.innerWidth);
   }
-  isload: boolean = false;
   ngOnInit(): void {
     this.screenSize$ = this.screenSizeSubject.asObservable().pipe(
       startWith(window.innerWidth),
@@ -24,7 +26,8 @@ export class HomeComponent implements AfterViewInit {
       distinctUntilChanged(),
       map(this.getScreenSize),
       share()
-      );
+    );
+
     this.active$ = this.screenSizeSubject.asObservable().pipe(
       startWith(window.innerWidth),
       debounceTime(200),
@@ -35,21 +38,7 @@ export class HomeComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-
-    Promise.resolve().then(() => {
-      setTimeout(() => {
-        const videoElement = this.myVideo?.nativeElement;
-        videoElement.controls = false;
-        videoElement.currentTime = 10
-        videoElement.addEventListener('ended', () => {
-          videoElement.play();
-        });
-      }, 800);
-    })
-
-
     setTimeout(() => {
-      this.isload = true;
     }, 500);
   }
 
@@ -79,5 +68,11 @@ export class HomeComponent implements AfterViewInit {
     } else {
       return false;
     }
+  }
+
+
+  loadImage(){
+    this.isload = true;
+
   }
 }

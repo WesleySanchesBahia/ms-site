@@ -1,8 +1,25 @@
 div{
   position: relative;
 }
+
+div > .outroPontos {
+  position: absolute;
+  margin-left: 170px;
+}
+div > .outroPontos svg {
+  width: 80px;
+}
+.outroPontos .mandaguari {
+  margin-top: 30px;
+  margin-left: 26px;
+  font-size: 8px;
+  position: absolute;
+  color: #fff;
+  pointer-events: none;
+
+}
 div > .bomSucesso, .jandaiaDoSul, .apucarana, .saoPedroDoIvai, .cambira,
-.saoJoaoDoIvai, .kalore, .novoItacolomi, .marumbi, .mandaguari, .rioBom, .california,
+.saoJoaoDoIvai, .kalore, .novoItacolomi, .marumbi, .rioBom, .california,
 .marilandia, .saoJoaoDoIvai, .borrazopolis, .mauaDaSerra,.lunardelli, .lidianopolis, .cruzmaltina, .faxinal, .ortigueira,.godoyMoreira, .jardinAlegre, .arapua, .ivaipora, .grandesRios, .manoelRibas,
 .aranhaDoIvai, .rioBrancoDoIVAI, .rosarioDoIvai, .candidoAbreu
  {
@@ -136,10 +153,10 @@ div > .mauaDaSerra{
   background-color: #fae5fe;
 }
 .hover{
-  fill: #196cfc;
+  fill: #3e3f93b2;
 }
 .border{
-  fill: #a8a8a8;
+  fill: #979797;
 }
 
 #pointer{
@@ -147,8 +164,68 @@ div > .mauaDaSerra{
   fill: #00a4b2;
 
 }
+#pointerParcial{
+
+  fill: #006169;
+
+}
 
 
 svg{
   background-color: rgba(255, 255, 255, 0);
+}
+
+div  .tooltip {
+  position: absolute;
+  background-color: #3e3f93b2;
+  width: 110px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 60px;
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+
+.tooltipCard{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  align-items: flex-start;
+  margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+.tooltipCard > :nth-child(1){
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tooltipCard > div{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.5rem;
+
+}
+
+.bullet{
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #006169;
+}
+.bullet-completa{
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #00a4b2;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2.2rem;
 }

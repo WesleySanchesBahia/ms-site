@@ -10,121 +10,30 @@
         e muito mais rapida!
       </h1>
     </div>
-      <img id="apresentacao" src="assets/image/pexels-fauxels-3184357.jpg" alt="img_apresentacao">
+      <img id="apresentacao"
+      src="assets/image/pexels-fauxels-3184357.jpg"
+      alt="img_apresentacao"
+      (load)="loadImage()"
+      >
   </div>
   <section class="containerPlanos" id="planos">
     <h1>Nossos planos</h1>
     <h3>Confira abaixo os planos residenciais mais assinados pelos nossos clientes</h3>
     <div class="containerCards">
 
-      <div class="containerCard">
+      <div class="containerCard" *ngFor="let item of listaPlanos">
         <div class="headerCard">
-          <h2>80 MEGAS</h2>
+          <h2>item.titulo</h2>
         </div>
         <div class="cardDescription">
           <ul>
-            <li>Download: 80 Mega</li>
-            <li>Upload: 80 Mega</li>
+            <li>item.download</li>
+            <li>item.upload</li>
           </ul>
-          <h4>Instalação gratuita 100% Fibra Ótica</h4>
+          <h4>item.descricao</h4>
         </div>
         <div class="btn">
-          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%2080%20mega" target="_blank" >Contrate agora</a>
-        </div>
-      </div>
-
-      <div class="containerCard">
-        <div class="headerCard">
-          <h2>100 MEGAS</h2>
-        </div>
-        <div class="cardDescription">
-          <ul>
-            <li>Download: 100 Mega</li>
-            <li>Upload: 100 Mega</li>
-          </ul>
-          <h4>Instalação gratuita 100% Fibra Ótica</h4>
-        </div>
-        <div class="btn">
-          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%20100%20mega" target="_blank" >Contrate agora</a>
-        </div>
-      </div>
-
-      <div class="containerCard">
-        <div class="headerCard">
-          <h2>400 MEGAS</h2>
-        </div>
-        <div class="cardDescription">
-          <ul>
-            <li>Download: 400 Mega</li>
-            <li>Upload: 400 Mega</li>
-          </ul>
-          <h4>Instalação gratuita 100% Fibra Ótica</h4>
-        </div>
-        <div class="btn">
-          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%20400%20mega" target="_blank" >Contrate agora</a>
-        </div>
-      </div>
-
-      <div class="containerCard">
-        <div class="headerCard">
-          <h2>500 MEGAS</h2>
-        </div>
-        <div class="cardDescription">
-          <ul>
-            <li>Download: 500 Mega</li>
-            <li>Upload: 500 Mega</li>
-          </ul>
-          <h4>Instalação gratuita 100% Fibra Ótica</h4>
-        </div>
-        <div class="btn">
-          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%20500%20mega" target="_blank" >Contrate agora</a>
-        </div>
-      </div>
-
-      <div class="containerCard">
-        <div class="headerCard">
-          <h2>700 MEGAS</h2>
-        </div>
-        <div class="cardDescription">
-          <ul>
-            <li>Download: 700 Mega</li>
-            <li>Upload: 700 Mega</li>
-          </ul>
-          <h4>Instalação gratuita 100% Fibra Ótica</h4>
-        </div>
-        <div class="btn">
-          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%20700%20mega" target="_blank" >Contrate agora</a>
-        </div>
-      </div>
-
-      <div class="containerCard">
-        <div class="headerCard">
-          <h2>800 MEGAS</h2>
-        </div>
-        <div class="cardDescription">
-          <ul>
-            <li>Download: 800 Mega</li>
-            <li>Upload: 800 Mega</li>
-          </ul>
-          <h4>Instalação gratuita 100% Fibra Ótica</h4>
-        </div>
-        <div class="btn">
-          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%20800%20mega" target="_blank" >Contrate agora</a>
-        </div>
-      </div>
-      <div class="containerCard">
-        <div class="headerCard">
-          <h2>900 MEGAS</h2>
-        </div>
-        <div class="cardDescription">
-          <ul>
-            <li>Download: 900 Mega</li>
-            <li>Upload: 900 Mega</li>
-          </ul>
-          <h4>Instalação gratuita 100% Fibra Ótica</h4>
-        </div>
-        <div class="btn">
-          <a href="https://wa.me/5543999249445?text=Gostaria%20de%20mais%20informações%20sobre%20a%20internet%20de%20900%20mega" target="_blank" >Contrate agora</a>
+          <a [href]="item.link" target="_blank" >Contrate agora</a>
         </div>
       </div>
     </div>
@@ -132,7 +41,7 @@
   <section class="containerMap" id="cobertura">
     <div class="tituloMap">
       <h1> Nossos pontos de cobertura</h1>
-      <h3>Visualize no mapa abaixo os nossos pontos de atendimento</h3>
+      <h3>Interaja com o mapa a baixo para mais informações dos nossos pontos de atendimento</h3>
     </div>
     <div class="map">
       <div class="descripition" *ngIf="screenSize$ | async">
@@ -141,7 +50,8 @@
           <app-show-slide ></app-show-slide>
         </div>
       </div>
-      <app-mapa></app-mapa>
+
+      <app-mapa ></app-mapa>
     </div>
   </section>
   <app-footer ></app-footer>
