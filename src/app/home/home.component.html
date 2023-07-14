@@ -23,14 +23,14 @@
 
       <div class="containerCard" *ngFor="let item of listaPlanos">
         <div class="headerCard">
-          <h2>item.titulo</h2>
+          <h2>{{item.titulo}}</h2>
         </div>
         <div class="cardDescription">
           <ul>
-            <li>item.download</li>
-            <li>item.upload</li>
+            <li>{{item.download}}</li>
+            <li>{{item.upload}}</li>
           </ul>
-          <h4>item.descricao</h4>
+          <h4>{{item.descricao}}</h4>
         </div>
         <div class="btn">
           <a [href]="item.link" target="_blank" >Contrate agora</a>
